@@ -1,3 +1,15 @@
-title: Course-in-a-Box
-description: An open-source project for creating online courses, built by <a href="https://www.p2pu.org">P2PU</a>
-modules: ["setup", "content", "customize"]
+title: SARS-CoV-2 Genomic Surveillance May 2024
+description: A Training on SARS-CoV-2 Genomics and Bioinformatics
+modules:
+  - "genomic-epidemiology"
+  - "wastewater-surveillance"
+  - "unix-linux-introduction"
+  - "next-generation-sequencing-data"
+  - "ngs-data-qc"
+  - "alignment-mapping"
+  - "variant-calling-and-consensus-genome-assembly"
+  - "lineage-assignment"
+  - "phylogenomics-for-epidemiological-surveillance"
+  - "introduction-to-galaxy"
+  - "galaxy-workflows-for-sars-cov-2-analysis"
+  - "data-management-and-sharing"
