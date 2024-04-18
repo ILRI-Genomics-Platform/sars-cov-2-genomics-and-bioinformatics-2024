@@ -1,6 +1,7 @@
 title: SARS-CoV-2 Genomic Surveillance May 2024
 description: A Training on SARS-CoV-2 Genomics and Bioinformatics
 modules:
+  - "sars-cov-2-sequencing"
   - "genomic-epidemiology"
   - "wastewater-surveillance"
   - "unix-linux-introduction"
