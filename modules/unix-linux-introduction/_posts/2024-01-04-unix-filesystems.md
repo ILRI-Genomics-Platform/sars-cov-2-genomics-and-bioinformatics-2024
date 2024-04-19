@@ -41,11 +41,11 @@ A file is an abstract object that can store information. We can write and read c
 #### Filesystem: directory tree
 
 <br>
-<left><img src="/img/filesystem-directory-01.png" alt="filesystem-file" width="100%"/></left>
+<left><img src="/img/filesystem-directory-01.png" alt="filesystem-directory" width="100%"/></left>
 <br>
 
 <br>
-<left><img src="/img/filesystem-directory-02.jpg" alt="filesystem-file" width="75%"/></left>
+<left><img src="/img/filesystem-directory-02.jpg" alt="filesystem-directory" width="75%"/></left>
 <br>
 
 #### Paths
@@ -93,7 +93,7 @@ Is the path from where you are now (your present working directory) to the file/
 <br>
 
 <br>
-<left><img src="/img/filesystem-directory-03.png" alt="filesystem-file" width="75%"/></left>
+<left><img src="/img/filesystem-directory-03.png" alt="filesystem-directory" width="75%"/></left>
 <br>
 
 1. A UNIX file is a physical object that exists on the computer’s hard-drive: True or False?
