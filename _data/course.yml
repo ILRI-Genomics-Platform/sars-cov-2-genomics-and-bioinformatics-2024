@@ -1,16 +1,11 @@
 title: SARS-CoV-2 Genomic Surveillance May 2024
 description: A Training on SARS-CoV-2 Genomics and Bioinformatics
 modules:
-  - "sars-cov-2 sequencing"
-  - "genomic epidemiology"
-  - "wastewater surveillance"
-  - "unix/linux introduction"
-  # - "next-generation-sequencing-data"
-  - "sars-cov-2 ngs data analysis"
-  # - "alignment-mapping"
-  # - "variant-calling-and-consensus-genome-assembly"
-  # - "lineage-assignment"
+  - "sars-cov-2-sequencing"
+  - "genomic-epidemiology"
+  - "wastewater-surveillance"
+  - "unix-linux-introduction"
+  - "sars-cov-2-ngs-data-analysis"
   - "phylogenomics"
-  # - "introduction-to-galaxy"
-  - "galaxy workflows for sars-cov-2 analysis"
-  - "data management and sharing"
+  - "galaxy-workflows-for-sars-cov-2-analysis"
+  - "data-management-and-sharing"
