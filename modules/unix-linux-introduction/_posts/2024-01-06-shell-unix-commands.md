@@ -36,6 +36,23 @@ Typing `cd` with no argument always returns you to your `home` directory.
 <br>
 
 
+#### <ins>Retrieve data/files over network</ins>
+
+`wget`              non-interactively download of files from the Web.  
+                    It supports HTTP, HTTPS, and FTP protocols as well as 
+                    retrieval through HTTP proxies
+
+**Exercise**
+Download the `science.txt` file to your `home` directory.
+
+`wget https://hpc.ilri.cgiar.org/~jjuma/training_data/science.txt`
+<br>
+
+#### <ins>Current working directory</ins>
+
+`pwd`               write absolute pathname of the current working directory to the standard output
+
+
 #### <ins>Copying files</ins>
 
 `cp`	 			copy files
@@ -45,7 +62,7 @@ Typical command
 `cp file1.txt file2.txt`		copy `file1.txt` in the current working directory and name it `file2.txt`
 
 **Exercise**
-Copy the `science.txt` file to the assignments directory.
+Copy the `science.txt` file to the `assignments` directory.
 Assuming you have a file named file1.txt in the current working directory, what
 does the command `cp file1.txt .` do?
 <br>
