@@ -190,6 +190,7 @@ output list called **slist**
 ```bash
 cat < biglist | sort > slist
 ```
+</details>
 <br>
 
 
