@@ -28,9 +28,9 @@ Make another directory in your `home` directory and name it `assignments`
 
 
 
-`cd`	 			change directory.
-`cd .`			    current directory
-`cd ..`             parent directory
+`cd`    change directory.
+`cd .`  current directory
+`cd ..` parent directory
 
 Typing `cd` with no argument always returns you to your `home` directory.
 <br>
@@ -190,6 +190,7 @@ output list called **slist**
 ```bash
 cat < biglist | sort > slist
 ```
+</details>
 <br>
 
 

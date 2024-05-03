@@ -8,7 +8,7 @@ title: Hands-on exercise
 1. Download the `cases.csv` file using `wget` command
 
 ```
-wget https://hpc.ilri.cgiar.org/~jjuma/sars-cov-2-genomics-and-bioinformatics-2024/data/shell-data/cases.csv
+wget https://hpc.ilri.cgiar.org/~jjuma/training_data/cases.csv
 ```
 
 The `cases.csv` file contains some simulated data on cholera cases in Haiti. Once eradicated
