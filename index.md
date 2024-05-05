@@ -32,7 +32,6 @@ Laboratory Medicine)
 
 <p float="left">
   <img src="img/ilri_cgiar_logo.jpeg" width="20%" align="top">
-  <img src="img/african_union_logo.svg" width="22%" align="top">
   <img src="img/africacdc_logo.svg" width="21%" align="top">
   <img src="img/aslm_logo.png" width="20%" align="top">
 </p>
