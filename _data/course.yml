@@ -1,11 +1,11 @@
-title: SARS-CoV-2 Genomic Surveillance May 2024
-description: A Training on SARS-CoV-2 Genomics and Bioinformatics
+title: Viral Pathogen Genomic Surveillance May 2024
+description: A Training on Viral Pathogen Genome Sequencing and Bioinformatics Analysis
 modules:
   - "sars-cov-2-sequencing"
   - "genomic-epidemiology"
   - "wastewater-surveillance"
   - "unix-linux-introduction"
-  - "sars-cov-2-ngs-data-analysis"
+  - "ngs-data-analysis"
   - "phylogenomics"
   - "galaxy-workflows-for-sars-cov-2-analysis"
   - "data-management-and-sharing"
