@@ -11,6 +11,7 @@ title: Hands-on exercise
 wget https://hpc.ilri.cgiar.org/~jjuma/training_data/cases.csv
 ```
 
+
 The `cases.csv` file contains some simulated data on cholera cases in Haiti. Once eradicated
 from the island, cholera reappeared in the Department (or region) of Artibonite in 2010 and
 more than 800,000 cases of disease have been recorded over the past decade.
