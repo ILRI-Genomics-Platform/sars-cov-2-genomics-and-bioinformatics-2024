@@ -86,7 +86,6 @@ In your `home` directory, make a directory named `backups` and move the `science
 
 #### <ins>Clearing the terminal screen</ins> 
 
-
 `clear`	 			clear the terminal screen
 
 Display content of a file
@@ -271,8 +270,10 @@ You can also use `tee` to catch `stderr` as shown in this example:
 
 #### <ins>Wildcards</ins>
 
+Download the data and extract
 ```bash 
-ln -s shell-data
+wget https://swcarpentry.github.io/shell-novice/data/shell-lesson-data.zip
+unzip shell-lesson-data.zip
 ```
 
 `*` is a wildcard, which matches zero or more characters. Let’s consider the 
