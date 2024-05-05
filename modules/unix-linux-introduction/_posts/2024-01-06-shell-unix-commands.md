@@ -45,7 +45,7 @@ Typing `cd` with no argument always returns you to your `home` directory.
 **Exercise**
 Download the `science.txt` file to your `home` directory.
 
-`wget https://hpc.ilri.cgiar.org/~jjuma/training_data/science.txt`
+```wget https://hpc.ilri.cgiar.org/~jjuma/training_data/science.txt```
 <br>
 
 #### <ins>Current working directory</ins>
@@ -121,7 +121,7 @@ Search for all the occurrences of the word science in the `science.txt` file
 
 **Exercise**
 
-`grep science science.txt`
+```grep science science.txt```
 
 - Search for all occurrences of the word **science**, ignore case sensitivity.
 - Display lines that **do not match the word science**.
@@ -137,7 +137,7 @@ Search for all the occurrences of the word science in the `science.txt` file
 
 
 **Exercise**
-`wc science.txt`
+```wc science.txt```
 
 - How many **lines** are in the `science.txt` file.
 - How many **characters** are in the science.txt file.
@@ -153,19 +153,19 @@ standard error (`stderr`), another output stream (independent of stdout) where p
 
 The output of a process or program can be saved using the redirection operator `>`.
 For example, you can redirect the output of the command ls to a file by:
-    `ls –lth > list_of_files.txt`
+    ```ls –lth > list_of_files.txt```
 This will create a file called `list_of_files.txt` or overwrite it if it does not exist.
 
 If you know that the file exists, you can append more content by using the
 operator `>>`
-    `ls –lth >> list_of_files.txt`
+    ```ls –lth >> list_of_files.txt```
 <br>
 
 
 
 Redirect the standard input into a file using > operator.
 
-`cat > list1`
+```cat > list1```
 
 Type the following in an interactive manner
 pear
@@ -180,22 +180,22 @@ Concatenate the two lists, `list1` and `list2` and name the resulting list as
 
 #### <ins>Sort items</ins>
 
-`sort biglist`
+```sort biglist```
 
 
 #### <ins>Input Redirection</ins>
 
 Input can also be given to a command from a file instead of typing it in the shell by using the redirection operator `<`.
-`cat < science.txt`
+```cat < science.txt```
 
 
 #### <ins>Error Redirection</ins>
 
-`rmdir no-dir 2> nodir_error.txt`
+```rmdir no-dir 2> nodir_error.txt```
 
 #### <ins>Merge stdout with stderr</ins>
 
-`cat science > combined_output.txt 2>&1`
+```cat science > combined_output.txt 2>&1```
 
 **Exercise**
 Use `biglist` as input stream, `sort` the list and **redirect** to a standard
@@ -217,12 +217,12 @@ cat < biglist | sort > slist
 `who`			Display who is logged in
 
 One method to get a sorted list of names is to type,
-`who > names.txt`
-`sort < names.txt`
+```who > names.txt```
+```sort < names.txt```
 
 This is a bit slow, and you must remember to remove the temporary file called names.txt when you have finished. What you really want to do is connect the output of the who command directly to the input of the sort command. This is exactly what pipes do. The symbol for a pipe is the vertical bar `|`
 
-`who | sort`
+```who | sort```
 
 - Print the count of sorted list of all users logged in
 - Using pipes, display all lines of list1 and list2 containing the letter 'p', and sort the result.
@@ -250,14 +250,16 @@ press Return to accept the suggested default of draft.txt).
 #### <ins>Redirect and save output</ins>
 
 To have the output go to both a file and the screen simultaneously.
-`cat science.txt | tee out.stdout.txt`
+```cat science.txt | tee out.stdout.txt```
 
 You can also use `tee` to catch `stderr` as shown in this example:
-`rmdir no-dir | tee out.stderr.txt`
+```rmdir no-dir | tee out.stderr.txt```
 <br>
 
 
 #### <ins>Wildcards</ins>
+
+```ln -s shell-data```
 
 `*` is a wildcard, which matches zero or more characters. Let’s consider the 
 `shell-lesson-data/exercise-data/proteins` directory: `*.pdb` matches 
@@ -329,7 +331,7 @@ Suppose I have a script `fastqc-run.sh` and want to make it executable for the
 
 I can change the file permission using the command
 
-`chmod u+x fastqc-run.sh`
+```chmod u+x fastqc-run.sh```
 
 <br>
 <left><img src="/img/fastqc-run-02.png" alt="File permissions" width="100%"/></left>
@@ -355,7 +357,7 @@ Absolute mode uses numbers to represent permissions and mathematical operators t
 <left><img src="/img/absolute-mode-03.png" alt="File permissions" width="100%"/></left>
 <br>
 
-`chmod 451 filename`
+```chmod 451 filename```
 
 2. Remove **execution** rights from **others** and **group**.
 
@@ -363,7 +365,7 @@ Absolute mode uses numbers to represent permissions and mathematical operators t
 <left><img src="/img/absolute-mode-04.png" alt="File permissions" width="100%"/></left>
 <br>
 
-`chmod 440 filename`
+```chmod 440 filename```
 
 
 **Exercise**
