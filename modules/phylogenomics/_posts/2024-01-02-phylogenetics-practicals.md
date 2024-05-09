@@ -154,10 +154,6 @@ item, so we use `last`.
 1. When was the probable date that B.1.1.7 variant occur in Kenya? 
 2. What is the substitution rate ob B.1.1.7 variant in this ML inference? 
 3. Are there potential outliers in the dataset?
-<details markdown="1">
-<summary>Hint</summary>
-Look at the results of the Heuristic residual mean squared function
-</details>
 
 - To remove potential outliers, we can inspect the `Residuals` tab and identify
   any sequences that deviate more than 0.0001 from the residual mean.
