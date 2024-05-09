@@ -151,7 +151,6 @@ item, so we use `last`.
 
 - Select `Root-to-tip` tab.
 
-<details>
 1. When was the probable date that B.1.1.7 variant occur in Kenya? 
 2. What is the substitution rate ob B.1.1.7 variant in this ML inference? 
 3. Are there potential outliers in the dataset?
@@ -163,7 +162,7 @@ Look at the results of the Heuristic residual mean squared function
 - To remove potential outliers, we can inspect the `Residuals` tab and identify
   any sequences that deviate more than 0.0001 from the residual mean.
 
-- >Potential outliers have been identified and written to a file named `B.1.1.7.potential.outliers.txt`. 
+- Potential outliers have been identified and written to a file named `B.1.1.7.potential.outliers.txt`. 
 
 9. We can remove these potential outliers from the tree and repeat the ML tree
   inference step
@@ -217,7 +216,6 @@ scp <USER>@hpc.ilri.cgiar.org:/var/scratch/global/$USER/phylodynamics/iqtree/B.1
 
 13. Inspect the new tree in TempEST.
 
-<details>
 1. Is there any improvement to the temporal signal for molecular clock analysis? 
 <details markdown="1">
 <summary>Hint</summary>
@@ -286,7 +284,6 @@ rsync -avP --partial /var/scratch/$USER/AfricaCDC_training/phylodynamics /var/sc
 
 scp <USER>@hpc.ilri.cgiar.org:/var/scratch/global/$USER/phylodynamics/treetime/b.1.1.7.viral-exchanges.pdf <DESTINATION>
 ```
-<details>
+
 1. Which cities/towns had the highest exportation events of B.1.1.7 variant?
 2. Which town/city was the biggest exporter of B.1.1.7 variant in Kenya? 
-</details>
