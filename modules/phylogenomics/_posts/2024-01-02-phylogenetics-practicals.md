@@ -15,8 +15,8 @@ set of virus sequences that been isolated at different points in time
 The focus is on SARS-CoV-2 virus evolution, in particular on the emergence and
 viral exchanges of the alpha (B.1.1.7) variant of SARS-CoV-2 in Kenya.
 
-The alpha data set has NOT been officially analyzed and ongoing analyses in
-underway. The aim is to obtain an estimate of ascertain several evolution
+The alpha data set has NOT been officially analyzed and ongoing analyses is
+underway. The aim is to obtain estimates of several evolution
 parameters including the time of the most recent common ancestor and viral
 exchanges between different locations in Kenya.
 
