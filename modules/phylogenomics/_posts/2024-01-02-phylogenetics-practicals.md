@@ -15,8 +15,8 @@ set of virus sequences that been isolated at different points in time
 The focus is on SARS-CoV-2 virus evolution, in particular on the emergence and
 viral exchanges of the alpha (B.1.1.7) variant of SARS-CoV-2 in Kenya.
 
-The alpha data set has NOT been officially analyzed and ongoing analyses in
-underway. The aim is to obtain an estimate of ascertain several evolution
+The alpha data set has NOT been officially analyzed and ongoing analyses is
+underway. The aim is to obtain estimates of several evolution
 parameters including the time of the most recent common ancestor and viral
 exchanges between different locations in Kenya.
 
@@ -31,12 +31,12 @@ the data for this tutorial.
 
 
 
-1. Login to the hpc and begin an interactive session on `compute06` with `2`
-   cores. Replace the `user` with your actual username
+1. Login to the hpc and begin an interactive session on `compute06` with `1`
+   core. Replace the `user` with your actual username
 
     ```bash
     ssh -y <user> hpc.ilri.cgiar.org
-    interactive -w compute06 -c 2
+    interactive -w compute06 -c 1
     ```
 
 
@@ -82,7 +82,7 @@ the data for this tutorial.
     cd /var/scratch/$USER/AfricaCDC_training/phylodynamics/alignment
 
     mafft \ 
-      --thread 2 /var/scratch/$USER/AfricaCDC_training/phylodynamics/deduplicated/B.1.1.7.dedup.fasta > \
+      --thread 1 /var/scratch/$USER/AfricaCDC_training/phylodynamics/deduplicated/B.1.1.7.dedup.fasta > \
       B.1.1.7.align.fasta
     ```
 
@@ -96,7 +96,7 @@ the data for this tutorial.
     modeltest-ng \
     --input /var/scratch/$USER/AfricaCDC_training/phylodynamics/alignment/B.1.1.7.align.fasta \
     --datatype nt \
-    -p 2 \
+    -p 1 \
     --models HKY,GTR \
     -t ml \
     -o B.1.1.7.model
@@ -209,7 +209,7 @@ item, so we use `last`.
 
     ```bash
     mafft \
-    --thread 2 \
+    --thread 1 \
     /var/scratch/$USER/AfricaCDC_training/phylodynamics/alignment/B.1.1.7.filtered.fasta > \
     /var/scratch/$USER/AfricaCDC_training/phylodynamics/alignment/B.1.1.7.filtered.align.fasta
     ```
