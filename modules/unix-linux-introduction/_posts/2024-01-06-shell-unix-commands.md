@@ -5,7 +5,40 @@ title: UNIX shell commands
 ## UNIX shell commands
 <br>
 
-#### <ins>Listing files and directories</ins>
+## Set-Up
+We will use the computer lab at ILRI, which is already equipped with
+Linux-operating desktop computers. Since we will be working from the remote
+servers, we will not need special setup for personal laptops. However, toward
+the end of the program, we can look into access to a Linux server from a Windows
+PC; or how to install a Linux (sub)system for any interested persons.
+
+
+## Log into the HPC
+From the terminal (or equvalent tool) of your local computer, you can log into
+the HPC using the folowing command line, followed by pressing <ENTER>. You will
+be promted to type-in your password (the password will not be visible as you
+type it; just have faith). On a Linux system, you can use the `Ctrl-Alt-T`
+keyboard shortcut to open a terminal.
+`ssh <user_name>@hpc.ilri.cgiar.org`
+
+The HPC head node has 4 CPUs and we need to access more CPUs/resources in other
+compute nodes.
+You will have to move from the cluster's head node into the node where we will
+be working from (it is called `compute05`). Use the following command; `-w`
+requests (a) specific list of host(s).
+
+```bash
+interactive -w compute05
+```
+
+`ssh` allows you to securely connect to the remote computer over internet, while
+`interactive` allows you to reserve resources to work interactively in a
+specified node within the computing cluster using the `-w` flag.
+>**Note**
+>When running a job interactively, the time limit is 8 hours and Default number
+>of CPU is 1.
+
+## Listing files and directories
 
 `ls` 			lists the contents of your current working directory.
 `ls -a` 	 	lists all the contents of your current working directory (including directories with a dot)
@@ -17,7 +50,7 @@ title: UNIX shell commands
 <br>
 
 
-#### <ins>Making directories</ins>
+## Making directories
 
 `mkdir` 			make a directory.
 
@@ -36,7 +69,7 @@ Typing `cd` with no argument always returns you to your `home` directory.
 <br>
 
 
-#### <ins>Retrieve data/files over network</ins>
+## Retrieve data/files over network
 
 `wget`              non-interactively download of files from the Web.  
                     It supports HTTP, HTTPS, and FTP protocols as well as 
@@ -50,12 +83,12 @@ wget https://hpc.ilri.cgiar.org/~jjuma/training_data/science.txt
 ```
 <br>
 
-#### <ins>Current working directory</ins>
+## Current working directory
 
 `pwd`               write absolute pathname of the current working directory to the standard output
 
 
-#### <ins>Copying files</ins>
+## Copying files
 
 `cp`	 			copy files
 
@@ -70,7 +103,7 @@ does the command `cp file1.txt .` do?
 <br>
 
 
-#### <ins>Moving files</ins>
+## Moving files
 
 
 `mv`	 			move or rename files
@@ -84,8 +117,7 @@ In your `home` directory, make a directory named `backups` and move the `science
 <br>
 
 
-#### <ins>Clearing the terminal screen</ins> 
-
+## Clearing the terminal screen 
 
 `clear`	 			clear the terminal screen
 
@@ -104,7 +136,7 @@ Display content of a file
 <br>
 
 
-#### <ins>Searching the contents of a file</ins>
+## Searching the contents of a file
 
 
 `less`	 			display contents of a text file on terminal screen one page at a time
@@ -115,7 +147,7 @@ Search for all the occurrences of the word science in the `science.txt` file
 <br>
 
 
-#### <ins>Searching the contents of a file with grep (global regular expression print)</ins>
+## Searching the contents of a file with grep (global regular expression print)
 
 
 `grep`	 			searching and matching patterns in a file
@@ -134,7 +166,7 @@ grep science science.txt
 <br>
 
 
-#### <ins>Word and line counts</ins>
+## Word and line counts
 
 
 `wc`	 			word, line, character and byte count
@@ -149,7 +181,7 @@ wc science.txt
 - How many **characters** are in the science.txt file.
 <br>
 
-#### <ins>I/O and Redirection</ins>
+## I/O and Redirection
 <br>
 Most processes in UNIX:
 
@@ -188,24 +220,24 @@ Using the above method, create another file called `list2` containing the foll
 Concatenate the two lists, `list1` and `list2` and name the resulting list as
 `biglist`.
 
-#### <ins>Sort items</ins>
+## Sort items
 
 ```bash
 sort biglist
 ```
 
 
-#### <ins>Input Redirection</ins>
+## Input Redirection
 
 Input can also be given to a command from a file instead of typing it in the shell by using the redirection operator `<`.
 ```cat < science.txt```
 
 
-#### <ins>Error Redirection</ins>
+## Error Redirection
 
 ```rmdir no-dir 2> nodir_error.txt```
 
-#### <ins>Merge stdout with stderr</ins>
+## Merge stdout with stderr
 
 ```cat science > combined_output.txt 2>&1```
 
@@ -223,7 +255,7 @@ cat < biglist | sort > slist
 <br>
 
 
-#### <ins>Pipes</ins>
+## Pipes
 
 
 `who`			Display who is logged in
@@ -241,7 +273,7 @@ This is a bit slow, and you must remember to remove the temporary file called na
 <br>
 
 
-#### <ins>Creating files</ins>
+## Creating files
 
 Files containing texts can be created using text editors such as `nano`, `vi`, `vim` on command line
 
@@ -259,7 +291,7 @@ press Return to accept the suggested default of draft.txt).
 <br>
 
 
-#### <ins>Redirect and save output</ins>
+## Redirect and save output
 
 To have the output go to both a file and the screen simultaneously.
 ```cat science.txt | tee out.stdout.txt```
@@ -269,10 +301,12 @@ You can also use `tee` to catch `stderr` as shown in this example:
 <br>
 
 
-#### <ins>Wildcards</ins>
+## Wildcards
 
+Download the data and extract
 ```bash 
-ln -s shell-data
+wget https://swcarpentry.github.io/shell-novice/data/shell-lesson-data.zip
+unzip shell-lesson-data.zip
 ```
 
 `*` is a wildcard, which matches zero or more characters. Let’s consider the 
@@ -285,7 +319,7 @@ because the ‘p’ at the front only matches filenames that **begin with the le
 
 
 
-#### <ins>File naming conventions</ins>
+## File naming conventions
 
 A directory is merely a special type of file. So, the rules and conventions for naming files apply also to directories.
 In naming files, characters with special meanings such as **/ * & %** , should be
@@ -301,7 +335,7 @@ The safest way to name a file is to use only **alphanumeric characters**, that i
 <br>
 
 
-#### <ins>File permissions</ins>
+## File permissions
 
 
 In UNIX, there are three types of owners: `user`, `group`, and `others`.
@@ -317,7 +351,7 @@ File permissions fall in three categories: `read`, `write`, and `execute`.
 <br>
 
 
-#### <ins>Changing permissions </ins>
+## Changing permissions 
 
 `chmod` 					change file modes
 
@@ -335,7 +369,7 @@ We can change permissions using **two modes**:
    numbers ranging from 0-7**.
 
 
-#### <ins>Symbolic mode</ins>
+## Symbolic mode
 Suppose I have a script `fastqc-run.sh` and want to make it executable for the
 **owner**, `jjuma`.
 
@@ -359,7 +393,7 @@ What would the commands below do to the script?
 - `chmod o-r fastqc-run.sh`
 - `chmod g=w fastqc-run.sh`
  
-#### <ins>Absolute mode</ins>
+## Absolute mode
 Absolute mode uses numbers to represent permissions and mathematical operators to modify them.
 
 <br>
