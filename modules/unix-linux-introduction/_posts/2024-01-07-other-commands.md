@@ -2,11 +2,11 @@
 title: Commands summary
 ---
 
-## Other useful commads
+## Other useful commands
 <br>
 
 
-#### <ins>Network</ins>
+## Network
 
 - `ssh`: Remote login and secure communication.
 - `scp`: Secure Copy for local and remote file transmission.
@@ -16,7 +16,7 @@ title: Commands summary
 - `wget`: Command-line utility for HTTP, HTTPS, and FTP file downloads
 
 
-#### <ins>System information</ins>
+## System information
 - `w`: Displays currently logged-in users.
 - `who`: Display who is on the system
 - `whoami`: Prints the current user's username.
@@ -30,7 +30,7 @@ title: Commands summary
 - `df`: displays disk space usage.
 
 
-#### <ins>Filters</ins>
+## Filters
 - `grep`: Searches for text patterns in files or command output.
 - `egrep`: Extended version of grep with more advanced pattern matching
 capabilities.
@@ -39,7 +39,7 @@ capabilities.
 - `head`: Displays the beginning portion of a file or command output.
 - `tail`: Displays the end portion of a file or command output
 
-#### <ins>File system</ins>
+## File system
 - `ls`: Lists files and directories in a directory.
 - `mkdir`: Creates a new directory.
 - `cd`: Changes the current directory.
@@ -61,11 +61,11 @@ capabilities.
 - `chmod`: Changes the permissions of files and directories.
 - `find`: Searches for files and directories based on various criteria.
 
-#### <ins>Line Editors</ins>
+## Line Editors
 - `awk`: A versatile text processing language for extracting and manipulating data.
 - `sed`: Stream Editor, used for text transformation and editing.
 
-#### <ins>File Editors</ins>
+## File Editors
 - `vim`: A highly configurable and powerful text editor.
 - `gvim`: Graphical version of Vim.
 - `nano`: popular text editor for Unix-like systems that simplifies terminal text file editing.

@@ -10,7 +10,7 @@ published: true
 #### Summary
 This exercise offers a guide on how to conduct maximum likelihood phylodynamic
 inference to reconstruct the evolutionary dynamics based on a
-set of virus sequences that been isolated at different points in time
+set of virus sequences that have been isolated at different points in time
 (‘heterochronous’ data) using [TreeTime](https://github.com/neherlab/treetime). 
 The focus is on SARS-CoV-2 virus evolution, in particular on the emergence and
 viral exchanges of the alpha (B.1.1.7) variant of SARS-CoV-2 in Kenya.

@@ -3,14 +3,12 @@ title: Prerequisite
 ---
 
 ## Prerequisite
-<br>
 This module will come after the introductory Linux module and therefore assumes
 familiarity with basic Linux command-line use. It also assumes you have an
 account and are operating in the ILRI computing cluster from a local Linux
 environment.
 
 >**Note**
-
 >Once inside the `hpc`, all instances of ```$USER``` will be equivalent to the
 >hpc username that you were assigned, for example `Bio4Info$$`. Your username,
 >by default, is stored in a variable called `USER`. By using it, you will not
@@ -18,14 +16,13 @@ environment.
 >username which is the value stored in the `USER` variable. The `$` (dollar)
 >character-prefix to a variable name is used to call the value of that variable.
 
-### Set-Up
+## Set-Up
 We will use the computer lab at ILRI, which is already equipped with
 Linux-operating desktop computers. Since we will be working from the remote
 servers, we will not need special setup for personal laptops. However, toward
 the end of the program, we can look into access to a Linux server from a Windows
 PC; or how to install a Linux (sub)system for any interested persons.
 
-### Preparation
 
 ## Log into the HPC
 From the terminal (or equvalent tool) of your local computer, you can log into
@@ -47,9 +44,9 @@ interactive -w compute05
 `ssh` allows you to securely connect to the remote computer over internet, while
 `interactive` allows you to reserve resources to work interactively in a
 specified node within the computing cluster using the `-w` flag.
+
 >**Note**
->When running a job interactively, the time limit is 8 hours and Default number
->of CPU is 1.
+>When running a job interactively, the time limit is 8 hours and Default number of CPU is 1.
 
 ## Project organisation
 

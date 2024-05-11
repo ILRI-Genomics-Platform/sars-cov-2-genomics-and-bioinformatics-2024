@@ -54,22 +54,25 @@ In UNIX, the top of the tree is the one directory that always exists and is not 
 
 The name of the variables file at the bottom of the diagram is composed by joining the name of the directories leading to it along with its name at the end.
 
+`/ + home + jolo + Project`
 
-	/ + home + jolo + Project
-    / + home + jolo + Results
-    / + home + jdoe + Documents
+ `/ + home + jolo + Results`
+
+  `/ + home + jdoe + Documents`
+
 
 
 
 Notation for a full path name of a file or directory is by joining the
 independent components with the “/”.
-
+```bash
     /home/jolo/Project
     /home/jolo/Results
     /home/jdoe/Documents
+```
 
 
-Root path /
+Root path `/`
 
 <br>
 
@@ -78,13 +81,13 @@ Root path /
 
 Details the entire path through the directory structure to get to a file, starting at /, the root directory
 
-/home/jolo/Projects
+```/home/jolo/Projects```
 
 ## <ins>Relative paths </ins>
 
 Is the path from where you are now (your present working directory) to the file/directory in question
 
-../Results
+```../Results```
 
 
 <br>
@@ -93,7 +96,7 @@ Is the path from where you are now (your present working directory) to the file/
 <br>
 
 <br>
-<left><img src="/img/filesystem-directory-03.png" alt="filesystem-directory" width="75%"/></left>
+<left><img src="/img/filesystem-directory-03.png" alt="filesystem-directory" width="100%"/></left>
 <br>
 
 1. A UNIX file is a physical object that exists on the computer’s hard-drive: True or False?
