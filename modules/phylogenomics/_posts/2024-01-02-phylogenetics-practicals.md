@@ -83,6 +83,7 @@ the data for this tutorial.
 
     mafft \ 
       --thread 1 /var/scratch/$USER/AfricaCDC_training/phylodynamics/deduplicated/B.1.1.7.dedup.fasta > \
+      --thread 2 /var/scratch/$USER/AfricaCDC_training/phylodynamics/deduplicated/B.1.1.7.dedup.fasta > \
       B.1.1.7.align.fasta
     ```
 
@@ -97,6 +98,7 @@ the data for this tutorial.
     --input /var/scratch/$USER/AfricaCDC_training/phylodynamics/alignment/B.1.1.7.align.fasta \
     --datatype nt \
     -p 1 \
+    -p 2 \
     --models HKY,GTR \
     -t ml \
     -o B.1.1.7.model
@@ -210,6 +212,7 @@ item, so we use `last`.
     ```bash
     mafft \
     --thread 1 \
+    --thread 2 \
     /var/scratch/$USER/AfricaCDC_training/phylodynamics/alignment/B.1.1.7.filtered.fasta > \
     /var/scratch/$USER/AfricaCDC_training/phylodynamics/alignment/B.1.1.7.filtered.align.fasta
     ```
