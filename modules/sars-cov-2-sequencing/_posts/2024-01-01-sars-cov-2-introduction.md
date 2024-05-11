@@ -21,8 +21,8 @@ facility.
 
 **Note**
 This is part of the initiative fronted by the [Africa
-CDC](https://africacdc.org/) with generous support from the [Rockeffeler
-foundation](https://www.rockefellerfoundation.org/) to build capacity in
+CDC](https://africacdc.org/) with generous support from the [ASLM] Africa
+Society for Laboratory Medicine to build capacity in
 pathogen genomics in Africa.
 
 <br>
