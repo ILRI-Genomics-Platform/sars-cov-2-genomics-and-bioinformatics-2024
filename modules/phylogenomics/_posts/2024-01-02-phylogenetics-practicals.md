@@ -54,7 +54,7 @@ the data for this tutorial.
     ln -s /var/scratch/global/AfricaCDC_training/phylogenetic-datasets .
     ```
 
-3. create intermediate directories/sub-directories for different outputs
+3. Create intermediate directories/sub-directories for different outputs
 
     ```bash
     mkdir -p phylodynamics/{deduplicated,alignment,models,iqtree,treetime}
@@ -298,18 +298,25 @@ Look at the results of the Heuristic residual mean squared function
         --outDir .
 
     Rscript \
-        /var/scratch/jjuma/AfricaCDC_training/phylogenetic-datasets/plotDiscreteLocations.R \
+        /var/scratch/$USER/AfricaCDC_training/phylogenetic-datasets/plotDiscreteLocations.R \
         --input b.1.1.7-kenya.annotated_tree_events.csv \
+        --prefix b.1.1.7
+
+
+    Rscript \
+        /var/scratch/$USER/AfricaCDC_training/phylogenetic-datasets/plotTree.R \
+        --tree /var/scratch/$USER/AfricaCDC_training/phylodynamics/treetime/timetree.nexus \
+        --metadata /var/scratch/$USER/AfricaCDC_training/phylogenetic-datasets/Kenya/sarscov-kenya-B.1.1.7.csv \
         --prefix b.1.1.7
     ```
 
-16. Transfer the `b.1.1.7.viral-exchanges.pdf` to your global temporary
+16. Transfer the `b.1.1.7.viral-exchanges.pdf` and the `b.1.1.7.time-calibrated-tree.pdf` to your global temporary
     directory and then download to your local computer
 
     ```bash
     rsync -avP --partial /var/scratch/$USER/AfricaCDC_training/phylodynamics /var/scratch/global/$USER/
 
-    scp <USER>@hpc.ilri.cgiar.org:/var/scratch/global/$USER/phylodynamics/treetime/b.1.1.7.viral-exchanges.pdf <DESTINATION>
+    scp <USER>@hpc.ilri.cgiar.org:/var/scratch/global/$USER/phylodynamics/treetime/*.pdf <DESTINATION>
     ```
 >**Quiz**
 >1. Which cities/towns had the highest exportation events of B.1.1.7 variant?
