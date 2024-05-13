@@ -310,7 +310,7 @@ unzip shell-lesson-data.zip
 ```
 
 `*` is a wildcard, which matches zero or more characters. Let’s consider the 
-`shell-lesson-data/exercise-data/proteins` directory: `*.pdb` matches 
+`shell-lesson-data/exercise-data/alkanes` directory: `*.pdb` matches 
 `ethane.pdb`, `propane.pdb`, and every file that **ends with .pdb**. 
 
 On the other hand, `p*.pdb` only matches `pentane.pdb` and `propane.pdb`, 
