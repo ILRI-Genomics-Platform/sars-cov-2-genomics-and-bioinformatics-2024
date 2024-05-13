@@ -82,8 +82,8 @@ the data for this tutorial.
     cd /var/scratch/$USER/AfricaCDC_training/phylodynamics/alignment
 
     mafft \ 
-      --thread 1 /var/scratch/$USER/AfricaCDC_training/phylodynamics/deduplicated/B.1.1.7.dedup.fasta > \
-      --thread 2 /var/scratch/$USER/AfricaCDC_training/phylodynamics/deduplicated/B.1.1.7.dedup.fasta > \
+      --thread 1 \
+      /var/scratch/$USER/AfricaCDC_training/phylodynamics/deduplicated/B.1.1.7.dedup.fasta > \
       B.1.1.7.align.fasta
     ```
 
@@ -212,8 +212,6 @@ item, so we use `last`.
     ```bash
     mafft \
     --thread 1 \
-    --thread 2 \
-    /var/scratch/$USER/AfricaCDC_training/phylodynamics/alignment/B.1.1.7.filtered.fasta > \
     /var/scratch/$USER/AfricaCDC_training/phylodynamics/alignment/B.1.1.7.filtered.align.fasta
     ```
 
