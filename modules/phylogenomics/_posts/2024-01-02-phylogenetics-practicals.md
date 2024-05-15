@@ -81,8 +81,7 @@ the data for this tutorial.
 
     cd /var/scratch/$USER/AfricaCDC_training/phylodynamics/alignment
 
-    mafft \ 
-      --thread 1 \
+    mafft --thread 1 \
       /var/scratch/$USER/AfricaCDC_training/phylodynamics/deduplicated/B.1.1.7.dedup.fasta > \
       B.1.1.7.align.fasta
     ```
