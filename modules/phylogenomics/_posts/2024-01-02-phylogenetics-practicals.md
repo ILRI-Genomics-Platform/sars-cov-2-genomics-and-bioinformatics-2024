@@ -89,7 +89,7 @@ the data for this tutorial.
 6. Test evolutionary models
 
     ```
-    module load 
+    module load modeltest/0.1.7
 
     cd /var/scratch/$USER/AfricaCDC_training/phylodynamics/models
 
