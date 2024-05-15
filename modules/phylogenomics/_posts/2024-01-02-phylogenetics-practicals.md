@@ -97,7 +97,6 @@ the data for this tutorial.
     --input /var/scratch/$USER/AfricaCDC_training/phylodynamics/alignment/B.1.1.7.align.fasta \
     --datatype nt \
     -p 1 \
-    -p 2 \
     --models HKY,GTR \
     -t ml \
     -o B.1.1.7.model
