@@ -89,7 +89,7 @@ the data for this tutorial.
 6. Test evolutionary models
 
     ```
-    module load 
+    module load modeltest/0.1.7
 
     cd /var/scratch/$USER/AfricaCDC_training/phylodynamics/models
 
@@ -97,7 +97,6 @@ the data for this tutorial.
     --input /var/scratch/$USER/AfricaCDC_training/phylodynamics/alignment/B.1.1.7.align.fasta \
     --datatype nt \
     -p 1 \
-    -p 2 \
     --models HKY,GTR \
     -t ml \
     -o B.1.1.7.model
@@ -188,7 +187,7 @@ item, so we use `last`.
 ![Select potential outlier](/img/highlight_outliers.png)
 {% endfigure %}
 
-- Potential outliers have been identified and written to a file named `B.1.1.7.potential.outliers.txt`. 
+- Potential outliers have been identified and written to a file named `b.1.1.7.potential.outliers.txt`. 
 
 9. We can remove these potential outliers from the tree and repeat the ML tree
   inference step
@@ -211,6 +210,7 @@ item, so we use `last`.
     ```bash
     mafft \
     --thread 1 \
+    /var/scratch/$USER/AfricaCDC_training/phylodynamics/alignment/B.1.1.7.filtered.fasta > \
     /var/scratch/$USER/AfricaCDC_training/phylodynamics/alignment/B.1.1.7.filtered.align.fasta
     ```
 
