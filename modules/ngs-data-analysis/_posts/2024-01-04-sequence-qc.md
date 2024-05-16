@@ -4,6 +4,8 @@ title: Sequence data quality control and decontamination
 
 ## Quality assessment
 
+{% pdf "/slides/sequence-data-quality-control.pdf" height=500px %}
+
 [`FastQC`](https://www.youtube.com/watch?v=bz93ReOv87Y)  is a common tool for Illumina read quality checks. The basic statistics from this report include `total sequences`, `sequence length` and `%GC`. Another 10 measures of quality are also graphically represented. Your experimental design will be crirical in interpreting `FastQC` reports. This step is very important for the subsequent data processes, especially at initial optimisation steps.
 
 
