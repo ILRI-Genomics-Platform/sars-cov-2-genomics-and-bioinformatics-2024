@@ -187,7 +187,7 @@ item, so we use `last`.
 ![Select potential outlier](/img/highlight_outliers.png)
 {% endfigure %}
 
-- Potential outliers have been identified and written to a file named `B.1.1.7.potential.outliers.txt`. 
+- Potential outliers have been identified and written to a file named `b.1.1.7.potential.outliers.txt`. 
 
 9. We can remove these potential outliers from the tree and repeat the ML tree
   inference step
@@ -299,7 +299,7 @@ Look at the results of the Heuristic residual mean squared function
 
     Rscript \
         /var/scratch/$USER/AfricaCDC_training/phylogenetic-datasets/plotDiscreteLocations.R \
-        --input b.1.1.7-kenya.annotated_tree_events.csv \
+        --input B.1.1.7.annotated_tree_events.csv \
         --prefix b.1.1.7
 
 

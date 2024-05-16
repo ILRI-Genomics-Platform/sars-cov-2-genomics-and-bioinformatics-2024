@@ -2,7 +2,11 @@
 title: Consensus genome reconstruction
 ---
 
+
 ## Consensus genome reconstruction
+
+{% pdf "/slides/consensus-genome-assembly.pdf" height=500px %}
+
 To generate a consensus sequence iVar uses the output of samtools mpileup
 command. The mpileup output must be piped into ivar consensus. There are five
 parameters that can be set:
