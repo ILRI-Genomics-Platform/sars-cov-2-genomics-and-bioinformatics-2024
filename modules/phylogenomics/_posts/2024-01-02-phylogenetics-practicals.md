@@ -299,7 +299,7 @@ Look at the results of the Heuristic residual mean squared function
 
     Rscript \
         /var/scratch/$USER/AfricaCDC_training/phylogenetic-datasets/plotDiscreteLocations.R \
-        --input b.1.1.7-kenya.annotated_tree_events.csv \
+        --input B.1.1.7.annotated_tree_events.csv \
         --prefix b.1.1.7
 
 
