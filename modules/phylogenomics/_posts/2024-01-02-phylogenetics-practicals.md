@@ -210,6 +210,7 @@ item, so we use `last`.
     ```bash
     mafft \
     --thread 1 \
+    /var/scratch/$USER/AfricaCDC_training/phylodynamics/alignment/B.1.1.7.filtered.align.fasta > \
     /var/scratch/$USER/AfricaCDC_training/phylodynamics/alignment/B.1.1.7.filtered.align.fasta
     ```
 
