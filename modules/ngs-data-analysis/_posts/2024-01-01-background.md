@@ -21,3 +21,5 @@ reads can be combined/concatenated into a single file bearing in mind the type
 of library sequencing either ```single``` or ```paired-end```.
 
 <br>
+
+{% pdf "/slides/fastq-file-format.pdf" height=500px %}
